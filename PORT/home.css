@@ -1,0 +1,443 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+  background: #080808;
+  color: #fff;
+  
+}
+img{
+  margin-left: 900px;
+  margin-top: -400px;
+}
+.logo
+{
+  font-size: 40px;
+  margin-left: 70px;
+  margin-top: 50px;
+}
+.logo span{
+  color: #ff004f;
+}
+nav{
+     width: 100%;
+     height: 50px;
+
+     margin: 0;
+}
+ul{
+  display: flex;
+  list-style: none;
+  margin-left: 900px;
+
+}
+ ul li{
+  margin: 10px 20px;
+  padding: 10px;
+  margin-top: -40px;
+}
+ul li a{
+ color: #fff;
+  text-decoration: none;
+
+}
+ul li a:hover
+{
+  color:#ff004f;
+}
+.header-text
+{
+  margin-top: 15%;
+  font-size: 30px;
+  margin-left: 150px;
+}
+.header-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text h1 span{
+  color: #ff004f;
+}
+.pic
+{
+  margin-top: 600px;
+margin-left: -700px;
+}
+.about h1
+{
+  font-size: 50px;
+  margin-left: 700px;
+  margin-top: -600px;
+}
+.about h1 span
+{
+  color: #ff004f;
+}
+.about p
+{
+  padding: 5%;
+  font-size: 20px;
+  margin-left: 660px;
+  margin-top: -49px;
+text-align: justify;
+}
+.tab-titles
+{
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-links
+{
+  margin-top: -50px;
+  margin-left: 740px;
+  margin-right: -700px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after
+{
+  content:'' ;
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  transition: 0.5s;
+
+}
+.tab-links.active-link::after
+{
+  width: 50%;
+}
+.tab-contents ul{
+  display: grid;
+  margin-top: -60px;
+}
+.tab-contents ul li{
+  list-style: none;
+  margin: 4px 0 4px;
+ 
+
+  
+}
+.tab-contents ul li span{
+  
+  display: flex;
+  color: #ff004f;
+  font-size: 14px;
+}
+.tab-contents
+{
+  display: none;
+  margin-left: -170px;
+}
+.tab-contents.active-tab
+{
+  display: block;
+}
+.service
+{
+  font-size: 35px;
+  margin-left: 200px;
+  margin-top: 150px;
+  height: 100vh;
+}
+
+.service span
+{
+  color: #ff004f;
+}
+
+
+
+.mh-skills .mh-professional-skill
+{
+  padding-right:60px;
+  color: white;
+  margin-left: 500px;
+  margin-top: -580px;
+}
+.mh-skills .mh-professional-skill h3{
+  
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 100px;
+  font-weight: 400;
+  margin-top: 80px;
+  font-family: 'poppins',sans-serif;
+}
+.mh-professional-skills h3
+{
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+  font-family: 'poppins',sans-serif;
+}
+.mh-professional-progress li{
+  display: inline-block;
+  margin: 0 auto;
+  float: none;
+  width:48;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+
+.candidatos
+{
+  position: relative;
+  margin-bottom: 15px;
+  font-family: 'poppins',sans-serif;
+}
+.candidatos .parcial
+{
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+.candidatos .parcial .info
+{
+  position: relative;
+  font-family: 'poppins',sans-serif;
+}
+.candidatos .parcial .info .nome
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.9;
+    font-family: 'poppins',sans-serif;
+}
+.candidatos .parcial .info .percentage-num
+{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  font-size: 14px;
+  font-weight: normal;
+}
+.candidatos .parcial .progressBar
+{
+  position: relative;
+  width: 100%;
+  height: 7px;
+  margin: 30px 0 2px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.5);
+}
+.candidatos .parcial .percentage
+{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 7px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #ff004f;
+  -webkit-transition: 3s all;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: animationPRogress;
+  font-family: 'poppins',sans-serif;
+}
+.precentual
+{
+  animation-name: animationProgress;
+}
+@keyframes animationProgress
+{
+      from
+      {
+        width: 0;
+      }
+}
+
+
+
+
+.project
+{
+    background-color: #080808;
+    color: white;
+}
+.projecthead
+{
+    padding-top: 100px;
+    text-align: center;
+    color:#ff004f;
+    
+    font-size: 2rem;
+   
+   
+    text-align: center;
+   
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.projectbox
+{
+    
+    display: flex;
+    
+    
+    
+    justify-content: center;
+   
+    
+    align-items: center;
+}
+.projectbox .prow{
+   
+    
+    height: 430px;
+    width: 309px;
+   
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 3px 3px 9px 9px rgba(0, 0, 0, 0.837);
+  
+    overflow: hidden;
+    background-color: #191919;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+.projectbox .prow:hover{
+    background-color:#ff005155;
+}
+.projectbox .prow .rhead{
+    
+    text-align: center;
+    color: #ff004f;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+   
+}
+.projectbox .prow .rpara{
+    
+   
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+  
+    line-height: 23px;
+    font-family: sans-serif;
+    color: white;
+    line-height: 1.7;
+   
+}
+.language{
+    font-size: 16px;
+    color: white;
+   
+}
+
+.contact{
+  min-height: 100vh;
+  padding: 50px;
+  text-align: center;
+}
+.container h2{
+  font-size: 50px;
+  margin-bottom: 40px;
+  
+}
+.container span
+{
+  color: #ff004f;
+}
+.contact-wrapper
+{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:30px;
+}
+.contact-form
+{
+  text-align: left;
+  padding-left: 200px;
+}
+.contact-form h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+.form-group
+{
+  margin-bottom: 20px;
+}
+input,textarea{
+  width: 500px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color:#f8f9fa;
+  color: #fff;
+}
+input:focus,
+textarea:focus{
+  online:none;
+  box-shadow: 0 0 8px #bbb;
+}
+button
+{
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff004f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover{
+    background-color: #ff004f;
+}
+.contact-info h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+ 
+}
+.pclass{
+  margin-top: 50px;
+}
+.contact-info p{
+  margin-bottom: 10px;
+  margin: 20px;
+  font-size: 20px;
+ 
+
+}
+.contact-info i{
+    color: #ff004f;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:767px) {
+  .container
+  {
+    padding: 20px;
+  }
+  .contact-wrapper
+  {
+   
+    grid-template-columns: 1fr;
+ 
+  }
+}

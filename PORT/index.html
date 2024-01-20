@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Personal portfolio Website-easy tutorial</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="logo">
+             <p><span>D</span>HIVYA</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            
+            <p>Student</p>
+            <h1>Hi,I'm <span>DHIVYADHARSHNI </span><br> From SALEM</h1>
+        </div>
+        <img src="Stylish Photo Pose.jpg" height="500px"width="400px">
+
+
+<div class="pic">
+    <img src="pic.jpg"height="550px"width="400px">
+</div>
+<div class="about" id="about">
+    <h1><span>A</span>bout Me.</h1>
+    <p>Hello there! I am currently a 3rd-year student at Sri Krishna College of Technology,passionate about web development. My educational journey began at Holy Cross Matriculation Higher Secondary School, where I laid the foundation for my academic pursuits.Web development has captivated my interest, and I'm dedicated to honing my skills in this domain. My academic endeavors have resulted in a CGPA of 7.00, a testament to my commitment to learning and growth. </p>
+</div>
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links"onclick="opentab('education')">Education</p>
+    </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>UI/Ux</span><br>Designing web/app interface</li>
+                <li><span>Web development</span><br>web app development</li>
+                <li><span>App development</span><br>building andrond/ios apps</li>
+            </ul>
+        </div>
+        <div class="tab-contents " id="education">
+            <ul>
+                <li><span>2018</span><br>Holy Cross</li>
+                <li><span>2021</span><br>Green park</li>
+            </ul>
+        </div>
+
+
+
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname)
+            {
+                for(tablink of tablinks)
+                {
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents)
+                {
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+                
+            }
+        </script>
+
+                <div class="service" id="skill">
+                    <h1><span>M</span>y Skills</h1>
+                </div>
+                <section class="mh-skills"id="mh-skills">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                              <div class="mh-skills-inner">
+                                <div class="mh-professional-skill">
+                                    <h3>Technical skills</h3>
+                                    <div class="each-skills">
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="name">javascript</div>
+                                                    <div class="percentage-num">56%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentage" style="width: 56%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="name">react</div>
+                                                    <div class="percentage-num">70%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentage" style="width: 70%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="name">Java</div>
+                                                    <div class="percentage-num">50%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentage" style="width: 50%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="candidatos">
+                                            <div class="parcial">
+                                                <div class="info">
+                                                    <div class="name">Mysql</div>
+                                                    <div class="percentage-num">36%</div>
+                                                </div>
+                                                <div class="progressBar">
+                                                    <div class="percentage" style="width: 36%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+
+                        </div>        
+                    </div> 
+                </section> 
+
+
+
+
+
+                <section class="project" id="project">
+                    <div class="projectcontainer">
+                       <div class="projecthead">
+                          <h2>My Projects</h2>
+                          <div class="line"></div>
+                       </div>
+                       <div class="projectbox">
+                           <div class="prow">
+                              <div class="rhead">
+                               <h2>Mex-o</h2>
+                              </div>
+                              <div class="rpara">
+                               <p><span class="language">Language used :</span> React(js,css) <br/>
+                                   It is an frontend project.This application is developed for touristers looking out for best hotel. 
+                                   Through this application touristers can go-through the top hotels in different places by either logging in or signing up their account. 
+                       
+                               </p>
+                              </div>
+                           </div><br/>
+                           <div class="prow">
+                               <div class="rhead">
+                                   <h2>WildLife Watching Tour</h2>
+                              </div>
+                              <div class="rpara">
+                               <p><span class="language">Language used :<br/></span> &nbsp;&nbsp;&nbsp;FrontEnd:React(js,css)<br/>&nbsp;&nbsp;&nbsp;BackEnd:SpringBoot(Js)<br/>&nbsp;&nbsp;&nbsp;MYSQL<br/>
+                                   It is fullstack project.online wildlife watching tour platform is to provide nature enthusiasts and adventure seekers with a virtual
+                                    platform that allows them to experience and appreciate wildlife from the comfort of their homes.
+                                  
+                               </p>
+                                  </div>
+                           </div><br/>
+                           <div class="prow">
+                               <div class="rhead">
+                                   <h2>Online Cosmetics Store</h2>
+                                  </div>
+                                  <div class="rpara">
+                                   <p><span class="language">Language used :<br/></span> &nbsp;&nbsp;&nbsp;FrontEnd:React(js,css),<br/>&nbsp;&nbsp;&nbsp;BackEnd:SpringBoot(Js),<br/>&nbsp;&nbsp;&nbsp;MYSQL<br/>
+                                       It is fullstack project with the CRUD operation. online cosmetics store is to provide customers with a convenient platform to browse, 
+                                       select, and purchase cosmetics items from the comfort of their interset. 
+                                      
+                                   </p>
+                                  </div>
+                           </div><br/>
+                       </div>
+                    </div>
+                       
+               </section>
+
+
+            <section class="contact" id="contact">
+                <div class="container">
+                    <h2><span>C</span>ontact us</h2>
+                    <div class="contact-wrapper">
+                        <div class="contact-form">
+                            <h3>send us a message</h3>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" name="name" placeholder="Your name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Your Email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea type="message"  placeholder="Your Message" rows="7"></textarea>
+                                </div>
+                                <button type="submit">send Message</button>
+                            </form>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <div class="pclass"></div>
+                            <p><i class="fas fa-phone"></i> 8972333435</p>
+                            <p><i class="fas fa-envelope"></i>info@example.com</p>
+                            <p><i class="fas fa-map-marker-alt"></i> street,city,country</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </body>
+</html>
